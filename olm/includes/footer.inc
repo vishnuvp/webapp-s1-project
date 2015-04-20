@@ -1,0 +1,2 @@
+<span class="copyright">&copy; Vishnu 2014</span>
+<span class="footer-links"><a href="http://www.nitc.ac.in">NITC Website</a> | <a href="http://www.cse.nitc.ac.in">CSED Website</a> | <a href="http://www.library.nitc.ac.in">NITC Central Library Website</a> </span>

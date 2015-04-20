@@ -1,0 +1,14 @@
+User type
+---------
+0 - Admin
+1 - Faculty
+2- Student
+
+
+Book Status
+-----------
+0 - Temporarily Unavailable 
+1 - on shelf
+2 - on loan
+3 - on shelf reserved
+4 - on loan reserved

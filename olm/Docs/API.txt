@@ -1,0 +1,21 @@
+1.Database Abstraction:
+db.class.inc
+DBConnection class
+	DBConnection(host,user,pwd,db)
+	connect()
+	disconnect()
+	insertValues(tablename,cols,values) : cols-array of attribute names, values-array of values
+	query(tablename, cols, whereclause, having, groupby, orderby) : all parameters are strings that are appended to the query
+
+2.Session Abstraction:	
+session.inc
+new_olm_session(user, time, role) - start new session
+revive_olm_session() - resume session; useful for maintaining
+is_olm_session_active() - returns true if an active session exists, false otherwise
+getters and setters for user, timestamp and role
+olm_session_out - ends session
+
+3. Authentication helpers
+authenticate.inc
+authenticate(username, passwords) - returns true if authentication succeeds
+get_role(username) - returns 0 for students/faculties, 1 for admins

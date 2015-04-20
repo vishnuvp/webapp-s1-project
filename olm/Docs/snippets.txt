@@ -1,0 +1,25 @@
+<div class="notifications">
+		<?php
+			$notes = get_todays_notifications('admin');
+		?>
+		<ul>
+			<li> Today is the due date for <span style="color:red"><?php echo $notes['due_date']; ?></span></li>
+			<li> There were <span style="color:red"><?php echo $notes['yday_issues']; ?> issues</span> yesterday</li>
+			<li> There were <span style="color:red"><?php echo $notes['yday_returns']; ?> returns</span> yesterday</li>
+		</ul>
+	</div>
+	
+
+	//todo
+
+	1.reports-done 5.notifications -done 3.cron run -done 4.fine - done
+	2.multiple copies
+	
+
+	INSERT INTO notification(uid,date,msg) VALUES("M140400CS","2014-10-05","Reservation on book 89 has expired.")
+
+	Reservation on book 89 has expired.INSERT INTO  reserve_archive SELECT * FROM reserve WHERE bid=89 AND uid='M140400CS'DELETE FROM reserve WHERE bid=89 AND uid='M140400CS'INSERT INTO notifications(uid,date,msg) VALUES("M140400CS","2014-10-05","Reservation on book 93 has expired.")Reservation on book 93 has expired.INSERT INTO  reserve_archive SELECT * FROM reserve WHERE bid=93 AND uid='M140400CS'DELETE FROM reserve WHERE bid=93 AND uid='M140400CS'INSERT INTO notifications(uid,date,msg) VALUES("M140400CS","2014-10-05","Reservation on book 90 has expired.")Reservation on book 90 has expired.INSERT INTO  reserve_archive SELECT * FROM reserve WHERE bid=90 AND uid='M140400CS'DELETE FROM reserve WHERE bid=90 AND uid='M140400CS'   	
+	
+
+
+	echo '<script>alert("'.$date2.'");</script>';

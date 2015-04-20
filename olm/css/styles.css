@@ -1,0 +1,573 @@
+body {
+	margin: 0 0 0 0;
+	background: url('/m140163cs/olm/assets/images/bg.png') repeat scroll 0 0 #FEFEFE;
+	background-size: cover;
+	color: white;
+}
+body.anonymous {
+	background: url('/m140163cs/olm/assets/images/bg-anonym.png') repeat scroll 0 0 #FEFEFE;
+}
+
+#login-container {
+
+	box-shadow: 0 0 20px #AEAEAE;
+	padding: 1em;
+	margin: 10% auto;
+	font-size: 0.8em;
+	text-align: center;
+	border-radius: 5px;
+}
+
+#login-container label,#login-container  input{
+
+font-size: 1.4em;
+padding: 0.1em;
+} 
+/*
+#login-container  input[type="submit"]{
+
+	padding: 2% 10%;
+	background: #3D85C6;
+	color: white;
+	font-size: 1.6em;
+}*/
+#logo {
+	width: 30%;
+}
+/*
+ * Message statuses
+ *
+*/
+.message {
+	font-size: 1.2em;
+	padding: 0.5em;
+}
+.info {
+
+	background-color: #D7FFDB;
+	border: 1px solid rgb(0, 119, 0);
+	color: darkgreen;
+}
+
+.error {
+	background-color: rgb(255, 33, 33);
+	border: 1px solid indianred;
+	color: white;
+}
+
+.warning {
+	background-color: rgb(252, 239, 147);
+	border: 1px solid brown;
+	color: brown;
+}
+.button {
+	padding: 1em;
+	border: 1px solid;
+	float: right;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+/*
+ *	Header Utility Bar 
+ */
+.header {
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	top: 0;
+	z-index: 999;
+
+}
+.header-utility-bar {
+ background: none repeat scroll 0 0 #005387;
+  height: 100px;
+}
+ .header-utility-bar li+li {
+   text-align: left;
+}
+
+ .header-utility-bar li + li {
+  float: right;
+  margin-right: 1em;
+  margin-top: 0.4em;
+}
+
+.header-utility-bar ul li{
+  list-style: none;
+  display: inline-block;
+}
+.header-utility-bar ul li a {
+text-decoration: none;
+color: white;
+
+}
+.header-utility-bar ul{
+	margin: 0;
+}
+.head-breaker {
+	margin-top: 100px;
+}
+.header-search-bar {
+ 
+	border-radius: 0 0 20px 20px;
+	left: 28%;
+	padding: 1.5em 0 0;
+	position: absolute;
+	top: 0;
+}
+.header-search-box, .header-search-options {
+  font-size: 2em;
+}
+
+#header-search-listing-id {
+	margin-top: 100px;
+}
+
+.header-search-listing {
+	background: none repeat scroll 0 0 #112a3a;
+	height: 500px;
+	overflow: hidden;
+	padding: 1em;
+}
+
+table.ajax-search-listing, table.user-search-listing {
+	width: 85%;
+	margin: 0 auto;
+	border-spacing: 10px;
+    border-collapse: separate;
+}
+table.ajax-search-listing td.ajax-search-list-item,table.user-search-listing td.user-search-list-item {
+	width: 50%;
+	border: 1px solid #005387;
+	border-left-width: 1em;
+	padding: 1em;
+	background: #0D1A42;
+	transition: all 400ms ease-in;
+}
+table.ajax-search-listing td.ajax-search-list-item:hover {
+	border-color: #DEDEDE;	
+	box-shadow: 0 0 5px #aeaeae inset;
+}
+
+table.user-search-listing td.user-search-list-item {
+	background: #DEDEDE;
+	color: #005387
+}
+table.user-search-listing td.user-search-list-item:hover {
+	border-color: #cc0000;	
+	box-shadow: 0 0 5px #aeaeae inset;
+	color: #cc0000;
+}
+div.result-row{
+	overflow: hidden;
+  
+}
+table.user-search-listing {
+
+	margin-bottom: 100px;
+}
+
+.ir-class:hover {
+	color: #005387;
+    background: #FFF;
+}
+.ir-class {
+    background: #005387;
+    color: #FFF;
+    text-decoration: none;
+    padding: 0.2em;
+}
+
+.search-miss {
+	color: indianred;
+}
+
+.form-container, .result-container {
+  margin: 10px auto;
+  width: 40%;
+  text-align: center;
+}
+.form-container form, .result-container .result-body {
+  border: 2px solid #005387;
+  background: none repeat scroll 0 0 #efefef;
+  padding: 1em;
+
+}
+.form-title, .result-title {
+
+  background: none repeat scroll 0 0 #005387;
+  border-radius: 5px 5px 0 0;
+  padding: 0.5em;
+}
+.form-container label, .result-container label {
+	color: #005387;
+	font-size: 1.2em;
+}
+
+.form-container .block label, .result-container .block label  {
+	display: block;
+}
+
+.form-container .block input,.form-container .block select, .form-container .block textarea {
+	display: block;
+	width: 100%;
+	font-size: 1.2em;
+}
+.submit-btn input {
+margin: 1em auto;
+width: 50%;
+font-size: 1.2em;
+display: block;
+
+}
+.form-container .inline label {
+	display: inline-block;
+}
+
+.welcome-bar {
+  background: url("/m140163cs/olm/assets/images/homesplash.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  text-align: right;
+  width: 70%;
+}
+.welcome-msg {
+  background: none no-repeat scroll 0 0 rgba(255, 0, 0, 0.5);
+  color: #ffffff;
+  font-family: monospace;
+  font-size: 2.5em;
+  padding-right: 1%;
+  position: absolute;
+  top: 70%;
+  width: 95%;
+}
+
+.admin-sections, .user-section {
+  margin: 10px auto;
+  width: 70%;
+  min-height: 200px;
+
+}
+.admin-section {
+  display: inline-block;
+  margin-left: 2%;
+  width: 30%;
+}
+.admin-section:hover .admin-section-title {
+	background-color: #cf0000;
+}
+.admin-section:hover .admin-section-body {
+	border-color: #cf0000;
+}
+.admin-section-title {
+  background: none repeat scroll 0 0 #005387;
+  border-radius: 5px 5px 0 0;
+  font-size: 1.2em;
+  padding: 2% 15%;
+  transition: all 400ms ease-in-out 0s;
+
+}
+.admin-section-body > ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+.admin-section-body {
+  background: none repeat scroll 0 0 #efefef;
+  border: 1px solid #005387;
+  padding: 5% 0;
+}
+
+.admin-section-body li {
+  background: none repeat scroll 0 0 #ffffff;
+  border-left: 5px solid #3d85c6;
+  list-style: none outside none;
+  margin: 2% auto;
+  padding: 4%;
+  transition: all 400ms ease-in-out 0s;
+  width: 84%;
+}
+.admin-section-body li:hover {
+		border-color: #cf0000;
+
+}
+.admin-section-body a {
+  text-decoration: none;
+}
+
+.user-sub-section {
+  background: none repeat scroll 0 0 rgba(0, 83, 135, 0.7);
+  border: 4px solid rgb(255, 255, 255);
+  margin-bottom: 20px;
+  text-align: left;
+  width: 100%;
+  padding: 0 0 0.5em;
+}
+
+.notification-section .user-section-title {
+	background: indianred;
+	color: white;
+	border: 4px solid indianred;
+	
+
+
+}
+.user-sub-section:hover .user-section-title {
+	background: indianred;
+	color: white;
+}
+.user-section-body {
+  padding: 1em;
+
+}
+.user-section-body ul {
+	margin: 0;
+	padding-left: 0.9em;
+}
+.user-section-body ul li{
+	list-style: none;
+	border-left: 5px solid white;
+	padding: 0.1em 0.5em;
+	margin-bottom: 5px;
+}
+.user-section-body ul li:hover{
+	border-left: 5px solid indianred;
+
+}
+.col-3 .user-sub-section {
+	width: 30%;
+	margin-left: 2%;
+	text-align:center;
+	display: inline-block;
+}
+
+.thumbnail-caption {
+  background: none repeat scroll 0 0 rgb(255, 255, 255);
+  color: rgb(0, 83, 135);
+}
+.thumbnail-caption a,  .user-sub-section a{
+  color: rgb(0, 83, 135);
+  text-decoration: none;
+}
+.thumbnail.searchby {
+  padding: 0.5em;
+}
+.footer {
+  background: none repeat scroll 0 0 #005387;
+  opacity:0.3;
+  bottom: 0;
+  box-shadow: 0 1px 5px #005387;
+  left: 4%;
+  margin: 0 auto;
+  padding: 1%;
+  position: fixed;
+  width: 90%;
+  transition: all 400ms ease-in;
+}
+.footer:hover {
+	opacity: 1;
+}
+.footer .copyright {
+	float: left;
+}
+
+.footer .footer-links {
+	float: right;
+	color: white;
+}
+
+.footer-links a {
+	text-decoration: none;
+	color: white;
+}
+
+.edit-table  {
+	border-collapse: collapse;
+	margin: 10px auto;
+	width: 90%;
+	margin-bottom: 100px;
+}
+
+.edit-table thead td, .editable-table thead td {
+	background: #005387;
+	color: white;
+	border-color: white;
+}
+.edit-table td{
+	padding: 0.3em;
+	border: 1px solid;
+	color: #005387;
+	text-align: center;
+	width:1em;
+}
+
+.edit-table td {
+	background: #DEDEDE;
+}
+
+.edit-table tr:hover td {
+	background: #545AA7;
+	color: white;
+	border-color: white;
+}
+
+.editable-table {
+	border-collapse: collapse;
+	margin: 10px auto;
+	width: 90%;
+}
+
+.editable-table td input,.editable-table td textarea {
+		width:7em;
+}
+
+.editable-table td {
+	border: 1px solid;
+	color: #005387;
+	text-align: center;
+	width:1em;
+}
+
+.form-container {
+	margin-bottom: 100px;
+}
+
+i.plus-sign {
+	background: url("/m140163cs/olm/assets/images/add_user_icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	padding: 3px 13px;
+}
+i.plus-book-sign {
+	background: url("/m140163cs/olm/assets/images/add_book_icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	padding: 3px 13px;
+}
+.req-mark {
+	color: indianred;
+	font-size: smaller;
+}
+
+#op-update-id {
+  background: none repeat scroll 0 0 #dddddd;
+  border-radius: 10px;
+  box-shadow: 0 0 12px #444444;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+  width: 40%;
+}
+
+.low-margin {
+	margin-bottom:10px;
+}
+
+#import-form-container {
+  width: 60%;
+}
+
+table.format-help-table tr td {
+	border: 2px solid #AEAEAE;
+	background: #FFF;
+	color: indianred;
+}
+
+.backlinks a {
+text-decoration: none;
+background: #DEDEDE;
+color: #550000;
+font-size: larger;
+padding: 7px 0.5em 4px 32px;
+margin: 0 1em;
+background: url("/m140163cs/olm/assets/images/icon_book.png") no-repeat scroll 0 0;
+
+}
+/*.backlinks a:before {
+  background-color: transparent;
+  content: "";
+  padding: 7px 16px;
+}*/
+
+.backlinks a:hover {
+	transition: all 200ms ease-in 0s;
+	color: #005387;
+	background-color: #FFFFFF;
+	box-shadow: 0 0 10px #AEAEAE;
+	border-radius:20px 0px 0px 20px;
+}
+
+.search-section {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	border: 2px solid #005387;
+	padding: 2em;
+}
+.check-status-link {
+	margin: 10px auto;
+	width: 30%;
+	text-align: center;
+}
+
+.user-section-title {
+background: #FEFEFE;
+padding: 0.5em;
+color: #556677;
+font-size: 1.2em;
+font-weight: bold;
+}
+
+.page-title {
+	margin: 0 auto;
+	background: none repeat scroll 0% 0% #FFF;
+	color: #567;
+	font-size: large;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0px;
+	width: 70%;
+}
+
+.report-container {
+	width: 70%;
+	margin: 10px auto;
+}
+
+.inline-manage-links {
+	text-decoration: none;
+	color: indianred;
+}
+
+.inline-manage-links:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+.inline-manage-links:visited {
+	color: indianred;
+} 
+.user-fine {
+text-align: center;
+}
+.fine {
+	font-weight: bold;
+	font-size: 1.2em;
+	
+}
+
+.banner-list {
+  background: none repeat scroll 0 0 #fefefe;
+  color: indianred;
+  margin: 0 auto;
+  padding: 1em;
+  width: 70%;
+  border: 2px solid #005387;
+}
+
+.banner-title {
+  background: none repeat scroll 0 0 #005387;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 1em;
+  width: 70%;
+  border: 2px solid #005387;
+}
